@@ -1,17 +1,5 @@
-var nhanVien = {
-    maNhanVien : '',
-    tenNhanVien : '',
-    chucVu : '',
-    heSoLuong : 0,
-    luongCoBan : 0,
-    soGioLam : 0,
-    tinhTongLuong :  function () {
-        var tongLuong = 0;
-        tongLuong = this.heSoLuong*this.luongCoBan*this.soGioLam;
-        return tongLuong;
-    },
-  
-}
+var nhanVien = new NhanVien();
+
 
 document.getElementById('btnHienThi').onclick = function () {
     nhanVien.maNhanVien = document.querySelector('#maNhanVien').value;
